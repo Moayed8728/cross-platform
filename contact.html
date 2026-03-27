@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact form for Moayed portfolio">
+    <title>Contact Me - Moayed Portfolio</title>
+</head>
+<body>
+
+<header>
+    <h1>Moayed</h1>
+    <p>Contact me using the form below</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#contactform">Contact Form</a></li>
+        <li><a href="#preferences">Preferences</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="contactform">
+        <h2>Contact Me</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend style="color: darkblue; font-size: 18px;">Personal Information</legend>
+
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"
+                        style="border: 2px solid navy; padding: 6px; font-size: 14px;"
+                        placeholder="Enter your full name"
+                        required maxlength="60">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"
+                        style="border: 2px solid green; padding: 6px;"
+                        placeholder="Enter your email"
+                        required maxlength="80">
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone"
+                        style="border: 2px solid purple; padding: 6px;"
+                        placeholder="Enter your phone number"
+                        required maxlength="15">
+                </p>
+
+                <p>
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age"
+                        style="border: 2px solid black; padding: 6px;"
+                        min="18" max="60" required>
+                </p>
+
+                <p>
+                    <label for="date">Preferred Contact Date:</label><br>
+                    <input type="date" id="date" name="date"
+                        style="border: 2px solid brown; padding: 6px;"
+                        required>
+                </p>
+
+                <p>
+                    <label for="range">How interested are you in my work? (1 to 10)</label><br>
+                    <input type="range" id="range" name="range" min="1" max="10">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend style="background-color: lightgray; padding: 4px;">Message Details</legend>
+
+                <p>
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject" style="padding: 6px; border: 1px solid gray;" required>
+                        <optgroup label="General">
+                            <option value="question">Question</option>
+                            <option value="feedback">Feedback</option>
+                        </optgroup>
+                        <optgroup label="Professional">
+                            <option value="job">Job Opportunity</option>
+                            <option value="project">Project Collaboration</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Services Needed:</label><br>
+                    <input type="checkbox" id="webdesign" name="services" value="webdesign">
+                    <label for="webdesign">Web Design</label><br>
+
+                    <input type="checkbox" id="frontend" name="services" value="frontend">
+                    <label for="frontend">Frontend Help</label><br>
+
+                    <input type="checkbox" id="backend" name="services" value="backend">
+                    <label for="backend">Backend Help</label>
+                </p>
+
+                <p>
+                    <label>Preferred Contact Method:</label><br>
+                    <input type="radio" id="contactemail" name="contactmethod" value="email" required>
+                    <label for="contactemail">Email</label><br>
+
+                    <input type="radio" id="contactphone" name="contactmethod" value="phone">
+                    <label for="contactphone">Phone</label><br>
+
+                    <input type="radio" id="contactwhatsapp" name="contactmethod" value="whatsapp">
+                    <label for="contactwhatsapp">WhatsApp</label>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="6" cols="40"
+                        style="border: 2px solid teal; padding: 8px; background-color: #f0f8ff;"
+                        placeholder="Write your message here"
+                        maxlength="300"
+                        required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit" style="color: white; background-color: darkblue; padding: 8px; border: 1px solid black;">Send Message</button>
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="preferences">
+        <h2>Contact Preferences</h2>
+        <p>This form collects contact details and message preferences in a properly structured HTML form.</p>
+    </section>
+</main>
+
+<footer>
+    <address>
+        Mohammed Alttater<br>
+        Email: mwyd8728@gmail.com<br>
+        Phone: +60 111 791 5983
+    </address>
+    <p><small>&copy; 2026 Moayed. Contact page.</small></p>
+</footer>
+
+</body>
+</html>
