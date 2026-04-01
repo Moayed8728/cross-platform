@@ -2,81 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Academic results of Moayed">
-    <title>Academic Record - Moayed Portfolio</title>
+    <meta name="description" content="Home page of Mo portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Moayed </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Moayed</h1>
-    <p>My academic results</p>
+    <div>
+        <h1>Moayed</h1>
+        <p>Software Engineering student building a simple portfolio website.</p>
+    </div>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#record">Academic Record</a></li>
-        <li><a href="#summary">Summary</a></li>
-    </ul>
+    <div class="nav-wrap">
+        <div class="nav-title">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="academic.html" class="active">Academic</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
 <main>
-    <section id="record">
+    <section>
         <h2>Academic Record</h2>
-
-        <table border="1" cellpadding="8" cellspacing="0">
-            <caption>Year 2 Academic Results</caption>
-            <thead>
-                <tr>
-                    <th scope="col" rowspan="2">Course Code</th>
-                    <th scope="col" rowspan="2">Course Name</th>
-                    <th scope="col" colspan="2">Semester 1 &amp; 2</th>
-                </tr>
-                <tr>
-                    <th scope="col">Credits</th>
-                    <th scope="col">Grade</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <th scope="row">SCSM2223</th>
-                    <td>Web Programming</td>
-                    <td>3</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <th scope="row">SCSJ2154</th>
-                    <td>Object Oriented Programming</td>
-                    <td>4</td>
-                    <td>A-</td>
-                </tr>
-                <tr>
-                    <th scope="row">SCSB2143</th>
-                    <td>Database</td>
-                    <td>3</td>
-                    <td>B+</td>
-                </tr>
-                <tr>
-                    <th scope="row">SCSD2523</th>
-                    <td>Computer Organization</td>
-                    <td>3</td>
-                    <td>B</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <td colspan="2"><strong>Total Credits</strong></td>
-                    <td><strong>13</strong></td>
-                    <td><strong>Average: B+</strong></td>
-                </tr>
-            </tfoot>
-        </table>
-    </section>
-
-    <section id="summary">
-        <h2>Summary</h2>
-        <p>This table shows a sample of my academic performance with course names, total credits, and final grades.</p>
+        <div class="table-wrap">
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption>Year 2 Academic Results</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">Course Code</th>
+                        <th scope="col" rowspan="2">Course Name</th>
+                        <th scope="col" colspan="2">Semester 1 &amp; 2</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Credits</th>
+                        <th scope="col">Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">SCSM2223</th>
+                        <td>Web Programming</td>
+                        <td>3</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SCSJ2154</th>
+                        <td>Object Oriented Programming</td>
+                        <td>4</td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SCSB2143</th>
+                        <td>Database Systems</td>
+                        <td>3</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SCSD2523</th>
+                        <td>Computer Organization</td>
+                        <td>3</td>
+                        <td>B</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>Total Credits</strong></td>
+                        <td><strong>13</strong></td>
+                        <td><strong>Average: B+</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </section>
 </main>
 
@@ -84,9 +89,9 @@
     <address>
         Moayed<br>
         Email: mwyd8728@gmail.com<br>
-        Phone: +60-111-791-5983
+        Phone: +601117915983
     </address>
-    <p><small>&copy; 2026 Moyed. Academic page.</small></p> 
+    <p><small>&copy; 2026 Moayed. All rights reserved.</small></p>
 </footer>
 
 </body>

@@ -2,44 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Personal portfolio homepage of Mohammed Alttater">
-    <title>Home - Moayed Portfolio</title>
+    <meta name="description" content="Home page of Mo portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Moayed </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Moayed</h1>
-    <p>A Software Engineering student who enjoys learning web development.</p>
+    <div>
+        <h1>Moayed</h1>
+        <p>Software Engineering student building a simple portfolio website.</p>
+    </div>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#intro">Introduction</a></li>
-        <li><a href="#pages">Portfolio Pages</a></li>
-        <li><a href="#goals">Goals</a></li>
-    </ul>
+    <div class="nav-wrap">
+        <div class="nav-title">HI</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
 <main>
-    <section id="intro">
+    <section>
         <h2>Welcome</h2>
-        <p>Welcome to my personal portfolio website. This website contains my background, skills, academic record, projects, and contact form.</p>
+        <p>This portfolio shows my background, skills, academic record, projects, and contact details.</p>
     </section>
 
-    <section id="pages">
-        <h2>Portfolio Pages</h2>
-        <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="academic.html">Academic Record</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-    </section>
+    <section>
+        <h2>Portfolio Overview</h2>
+        <div class="card-grid">
+            <article class="card featured">
+                <h3>About Me</h3>
+                <p>I am learning web development and building my skills step by step.</p>
+                <p><a href="about.html">Read more</a></p>
+            </article>
 
-    <section id="goals">
-        <h2>My Goal</h2>
-        <p>My goal is to improve my HTML skills and build a strong base before learning advanced web design tools.</p>
+            <article class="card">
+                <h3>Skills</h3>
+                <p>This page shows my top skills, technologies, and glossary.</p>
+                <p><a href="skills.html">View page</a></p>
+            </article>
+
+            <article class="card">
+                <h3>Academic</h3>
+                <p>This page shows my academic table with results and credits.</p>
+                <p><a href="academic.html">View page</a></p>
+            </article>
+
+            <article class="card">
+                <h3>Projects</h3>
+                <p>This page shows images and project screenshots in a grid.</p>
+                <p><a href="projects.html">View page</a></p>
+            </article>
+
+            <article class="card">
+                <h3>Contact</h3>
+                <p>This page has a styled contact form with different inputs.</p>
+                <p><a href="contact.html">View page</a></p>
+            </article>
+        </div>
     </section>
 </main>
 
@@ -47,7 +76,7 @@
     <address>
         Moayed<br>
         Email: mwyd8728@gmail.com<br>
-        Phone: +60-111-791-5983
+        Phone: +601117915983
     </address>
     <p><small>&copy; 2026 Moayed. All rights reserved.</small></p>
 </footer>

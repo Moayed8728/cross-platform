@@ -2,65 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="About Moayed">
-    <title>About Me - Moayed Portfolio</title>
+    <meta name="description" content="Home page of Mo portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Moayed </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Moayed</h1>
-    <p>About me and my interests</p>
+    <div>
+        <h1>Moayed</h1>
+        <p>Software Engineering student building a simple portfolio website.</p>
+    </div>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#quote">Quote</a></li>
-        <li><a href="#terms">Terms</a></li>
-    </ul>
+    <div class="nav-wrap">
+        <div class="nav-title">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
-<main>
-    <section id="aboutme">
-        <h2>about Me</h2>
-        <p>i'm a <strong>Software engineerinng student</strong> who is interested in <em>web developmentt</em> and learning how websites are built.</p>
+<main class="two-col">
+    <section>
+        <h2>About Me</h2>
+        <p>I am a <strong>Software Engineering student</strong> who is interested in <em>web development</em>.</p>
 
-        <h3>my Interests</h3>
-        <p>I like <b>coding</b> in my free time and I also enjoy <i>discovering new technologies</i>.</p>
+        <h3>My Interests</h3>
+        <p>I enjoy <b>coding</b> and <i>learning new technologies</i>.</p>
 
-        <!-- <strong> and <em> add meaning and importance, while <b> and <i> are mainly for visual style  -->
+        <!-- strong and em show meaning, while b and i are more visual. -->
 
         <h4>Why I Study Technology</h4>
-        <p>I study technology because I want to build useful systems that solve real problems for students and users.</p>
-    </section>
+        <p>I study technology because I want to build useful systems that solve real problems.</p>
 
-    <section id="quote">
-        <h2>favorite Quote</h2>
         <blockquote cite="https://www.goodreads.com/quotes/40705-code-is-like-humor-when-you-have-to-explain-it">
-            Code is like humorWhen you have to explain it, its bad.
+            Code is like humor. When you have to explain it, it’s bad.
         </blockquote>
-        <p><cite>House</cite></p>
-    </section>
+        <p>Cory House</p>
 
-    <section id="terms">
-        <h2>Useful Terms</h2>
-        <p><abbr title="HyperText Markup Language">HTML</abbr> is the main language used to structure web pages.</p>
-        <p><dfn>API</dfn> is a set of rules that allows two systems to communicate with each other.</p>
-        <p>Example of subscript: H<sub>2</sub>O</p>
-        <p>Example of superscript: 10<sup>2</sup> = 100</p>
+        <p><abbr title="HyperText Markup Language">HTML</abbr> is used to structure web pages.</p>
+        <p><dfn>API</dfn> is a way for systems to communicate.</p>
+        <p>H<sub>2</sub>O is an example of subscript.</p>
+        <p>10<sup>2</sup> = 100 is an example of superscript.</p>
         <p><mark>Practice is the key to improving programming skills.</mark></p>
     </section>
+
+    <aside>
+        <h2>Quick Facts</h2>
+        <ul class="plain-list">
+            <li>Field: Software Engineering</li>
+            <li>Interest: Web Development</li>
+            <li>Goal: Improve my portfolio</li>
+            <li>Focus: Responsive design</li>
+        </ul>
+    </aside>
 </main>
 
 <footer>
     <address>
         Moayed<br>
         Email: mwyd8728@gmail.com<br>
-        Phone: +60-111-791-5983
+        Phone: +601117915983
     </address>
-    <p><small>&copy; 2026 Moayed. Educational portfolio page.</small></p>
+    <p><small>&copy; 2026 Moayed. All rights reserved.</small></p>
 </footer>
 
 </body>
 </html>
-

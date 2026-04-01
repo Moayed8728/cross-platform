@@ -2,81 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Contact form for Moayed portfolio">
-    <title>Contact Me - Moayed Portfolio</title>
+    <meta name="description" content="Home page of Mo portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Moayed </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Moayed</h1>
-    <p>Contact me using the form below</p>
+    <div>
+        <h1>Moayed</h1>
+        <p>Software Engineering student building a simple portfolio website.</p>
+    </div>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#contactform">Contact Form</a></li>
-        <li><a href="#preferences">Preferences</a></li>
-    </ul>
+    <div class="nav-wrap">
+        <div class="nav-title">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
 <main>
-    <section id="contactform">
+    <section class="form-box">
         <h2>Contact Me</h2>
 
         <form action="#" method="post">
             <fieldset>
-                <legend style="color: darkblue; font-size: 18px;">Personal Information</legend>
+                <legend>Personal Information</legend>
 
-                <p>
-                    <label for="fullname">Full Name:</label><br>
-                    <input type="text" id="fullname" name="fullname"
-                        style="border: 2px solid navy; padding: 6px; font-size: 14px;"
-                        placeholder="Enter your full name"
-                        required maxlength="60">
-                </p>
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required maxlength="60">
+                </div>
 
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"
-                        style="border: 2px solid green; padding: 6px;"
-                        placeholder="Enter your email"
-                        required maxlength="80">
-                </p>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required maxlength="80">
+                </div>
 
-                <p>
-                    <label for="phone">Phone Number:</label><br>
-                    <input type="tel" id="phone" name="phone"
-                        style="border: 2px solid purple; padding: 6px;"
-                        placeholder="Enter your phone number"
-                        required maxlength="15">
-                </p>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required maxlength="15">
+                </div>
 
-                <p>
-                    <label for="age">Age:</label><br>
-                    <input type="number" id="age" name="age"
-                        style="border: 2px solid black; padding: 6px;"
-                        min="18" max="60" required>
-                </p>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="18" max="60" required>
+                </div>
 
-                <p>
-                    <label for="date">Preferred Contact Date:</label><br>
-                    <input type="date" id="date" name="date"
-                        style="border: 2px solid brown; padding: 6px;"
-                        required>
-                </p>
+                <div class="form-group">
+                    <label for="date">Preferred Contact Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
 
-                <p>
-                    <label for="range">How interested are you in my work? (1 to 10)</label><br>
+                <div class="form-group">
+                    <label for="range">Interest Level (1 to 10)</label>
                     <input type="range" id="range" name="range" min="1" max="10">
-                </p>
+                </div>
             </fieldset>
 
             <fieldset>
-                <legend style="background-color: lightgray; padding: 4px;">Message Details</legend>
+                <legend>Message Details</legend>
 
-                <p>
-                    <label for="subject">Subject:</label><br>
-                    <select id="subject" name="subject" style="padding: 6px; border: 1px solid gray;" required>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
                         <optgroup label="General">
                             <option value="question">Question</option>
                             <option value="feedback">Feedback</option>
@@ -86,61 +84,62 @@
                             <option value="project">Project Collaboration</option>
                         </optgroup>
                     </select>
-                </p>
+                </div>
 
-                <p>
-                    <label>Services Needed:</label><br>
-                    <input type="checkbox" id="webdesign" name="services" value="webdesign">
-                    <label for="webdesign">Web Design</label><br>
+                <div class="form-group">
+                    <label>Services Needed</label>
+                    <div class="choice-group">
+                        <div class="choice-item">
+                            <input type="checkbox" id="webdesign" name="services" value="webdesign">
+                            <label for="webdesign">Web Design</label>
+                        </div>
+                        <div class="choice-item">
+                            <input type="checkbox" id="frontend" name="services" value="frontend">
+                            <label for="frontend">Frontend Help</label>
+                        </div>
+                        <div class="choice-item">
+                            <input type="checkbox" id="backend" name="services" value="backend">
+                            <label for="backend">Backend Help</label>
+                        </div>
+                    </div>
+                </div>
 
-                    <input type="checkbox" id="frontend" name="services" value="frontend">
-                    <label for="frontend">Frontend Help</label><br>
+                <div class="form-group">
+                    <label>Preferred Contact Method</label>
+                    <div class="choice-group">
+                        <div class="choice-item">
+                            <input type="radio" id="contactemail" name="contactmethod" value="email" required>
+                            <label for="contactemail">Email</label>
+                        </div>
+                        <div class="choice-item">
+                            <input type="radio" id="contactphone" name="contactmethod" value="phone">
+                            <label for="contactphone">Phone</label>
+                        </div>
+                        <div class="choice-item">
+                            <input type="radio" id="contactwhatsapp" name="contactmethod" value="whatsapp">
+                            <label for="contactwhatsapp">WhatsApp</label>
+                        </div>
+                    </div>
+                </div>
 
-                    <input type="checkbox" id="backend" name="services" value="backend">
-                    <label for="backend">Backend Help</label>
-                </p>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here" maxlength="300" required></textarea>
+                </div>
 
-                <p>
-                    <label>Preferred Contact Method:</label><br>
-                    <input type="radio" id="contactemail" name="contactmethod" value="email" required>
-                    <label for="contactemail">Email</label><br>
-
-                    <input type="radio" id="contactphone" name="contactmethod" value="phone">
-                    <label for="contactphone">Phone</label><br>
-
-                    <input type="radio" id="contactwhatsapp" name="contactmethod" value="whatsapp">
-                    <label for="contactwhatsapp">WhatsApp</label>
-                </p>
-
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="6" cols="40"
-                        style="border: 2px solid teal; padding: 8px; background-color: #f0f8ff;"
-                        placeholder="Write your message here"
-                        maxlength="300"
-                        required></textarea>
-                </p>
-
-                <p>
-                    <button type="submit" style="color: white; background-color: darkblue; padding: 8px; border: 1px solid black;">Send Message</button>
-                </p>
+                <button type="submit">Send Message</button>
             </fieldset>
         </form>
-    </section>
-
-    <section id="preferences">
-        <h2>Contact Preferences</h2>
-        <p>This form collects contact details and message preferences in a properly structured HTML form.</p>
     </section>
 </main>
 
 <footer>
     <address>
-        Mohammed Alttater<br>
+        Moayed<br>
         Email: mwyd8728@gmail.com<br>
-        Phone: +60 111 791 5983
+        Phone: +601117915983
     </address>
-    <p><small>&copy; 2026 Moayed. Contact page.</small></p>
+    <p><small>&copy; 2026 Moayed. All rights reserved.</small></p>
 </footer>
 
 </body>

@@ -2,52 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Projects and images for Mohammed Alttater portfolio">
-    <title>Projects - Moayed Portfolio</title>
+    <meta name="description" content="Home page of Mo portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Moayed </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Mohammed Alttater</h1>
-    <p>My project images and portfolio media</p>
+    <div>
+        <h1>Moayed</h1>
+        <p>Software Engineering student building a simple portfolio website.</p>
+    </div>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#profilephoto">Profile Photo</a></li>
-        <li><a href="#projectshot">Project Screenshot</a></li>
-        <li><a href="#description">Project Description</a></li>
-    </ul>
+    <div class="nav-wrap">
+        <div class="nav-title">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
 <main>
-    <section id="profilephoto">
-        <h2>Profile Photo</h2>
-        <figure>
-            <img src="https://placehold.co/200x200" alt="A placeholder profile photo representing the portfolio owner" width="200" height="200" title="This is my profile photo">
-            <figcaption>My profile photo used in the portfolio.</figcaption>
-        </figure>
-    </section>
+    <section>
+        <h2>Projects Gallery</h2>
+        <div class="media-grid">
+            <figure>
+                <img src="https://placehold.co/500x300" alt="A placeholder profile image representing the portfolio owner" width="500" height="300" title="Profile image">
+                <figcaption>Profile image used to represent the portfolio owner.</figcaption>
+            </figure>
 
-    <section id="projectshot">
-        <h2>Project Screenshot</h2>
-        <figure>
-            <a href="https://example.com">
-                <img src="https://placehold.co/400x200" alt="A placeholder screenshot representing one of my web development projects" width="400" height="200">
-            </a>
-            <figcaption>Clickable project screenshot that opens a URL.</figcaption>
-        </figure>
-    </section>
+            <figure>
+                <a href="https://example.com">
+                    <img src="https://placehold.co/500x300" alt="A placeholder screenshot representing a web project interface" width="500" height="300">
+                </a>
+                <figcaption>Clickable project screenshot that opens an external URL.</figcaption>
+            </figure>
 
-    <section id="description">
-        <h2>Project Description</h2>
-        <!-- The align attribute is deprecated in HTML. Modern layouts should use CSS instead. -->
-        <img src="https://placehold.co/150x150" alt="A small placeholder image placed beside project description text" width="150" height="150" align="left">
-        <p>
-            This image is placed beside the paragraph to demonstrate the deprecated align attribute as required. 
-            One of my projects is a student-focused system that helps users find information more easily. 
-            I enjoy building projects because they help me practice planning, structuring pages, and improving my coding skills.
-        </p>
+            <figure>
+                <img src="https://placehold.co/500x300" alt="A placeholder image showing a portfolio design layout" width="500" height="300">
+                <figcaption>Sample project layout focused on organization and readability.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://placehold.co/500x300" alt="A placeholder image showing a responsive website concept" width="500" height="300">
+                <figcaption>Responsive design concept for mobile, tablet, and desktop views.</figcaption>
+            </figure>
+        </div>
     </section>
 </main>
 
@@ -55,9 +63,9 @@
     <address>
         Moayed<br>
         Email: mwyd8728@gmail.com<br>
-        Phone: +60-111-791-5983
+        Phone: +601117915983
     </address>
-    <p><small>&copy; 2026 Moayed. Projects page.</small></p>
+    <p><small>&copy; 2026 Moayed. All rights reserved.</small></p>
 </footer>
 
 </body>
